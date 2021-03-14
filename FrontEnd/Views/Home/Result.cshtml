@@ -2,4 +2,41 @@
     ViewData["Title"] = "Result";
 }
 
-<h6>@ViewData["Message"]</h6>
+<table>
+    <thead>
+    <th>Name</th>
+    <th>Domínio</th>
+    </thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<a href="/">Voltar</a>
+
+@* Script to inject table elements with Universities' informations, not all elements of return JSON were considered relevant to appear on the View *@
+<script type="text/javascript">
+
+    // Gets the JSON Result as string and parses it into an Array 
+    var resultJsonString = `@Html.Raw(ViewData["UniversityJson"])`;
+    var resultArray = JSON.parse(resultJsonString);
+
+    // Iterates over array to load Universities' informations into View's HTML
+    for (var i = resultArray.length - 1; i >= 0; i--) {
+
+        // Checks to see if any data is null and treats to appear as string instead of null
+        if (resultArray[i].domains.length > 0) {
+            var domain = resultArray[i].domains[0];
+        } else {
+            var domain = 'Indisponível';
+        }
+
+        if (resultArray[i].web_pages.length > 0) {
+            var webPage = resultArray[i].web_pages[0];
+        } else {
+            var webPage = 'Indisponível'
+        }
+
+        // Injects the final values of Brazilian Universities into table's HTML
+        var tableBody = document.getElementById('table-body');
+        tableBody.innerHTML = tableBody.innerHTML + '<tr><td>' + resultArray[i].name + '</td><td>' + domain + '</td></tr>';
+    }
+</script>

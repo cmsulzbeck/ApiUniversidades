@@ -2,12 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
+using System.Net.Security;
+using System.Security.Cryptography.X509Certificates;
 
 namespace FrontEnd.Controllers
 {
@@ -29,25 +27,36 @@ namespace FrontEnd.Controllers
         {
             return View();
         }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Use this area to provide additional information";
-
-            return View();
-        }
-
+        
+        [HttpGet]
         public IActionResult Result(string? name)
         {
-            var stringTeste = "http://universities.hipolabs.com/search?country=brazil";
+            // String that call CarlotaAPI and gets the JSON object as string to be processed in Result View
+            var stringUniversidades = "https://localhost:5443/search";
 
+            if (name != null)
+            {
+                stringUniversidades = $"https://localhost:5443/search?name={name}";
+            }
+
+            // * -----------------------------------------------------------------------------------------------------------------------*
+            // NOT RECOMMENDED, USED ONLY TO BYPASS SECURITY PROTOCOLS FOR TEST PURPOSES. RUN THIS CODE ONLY IN LOCAL OR DEV ENVIRONMENTS
+            // * -----------------------------------------------------------------------------------------------------------------------*
+            ServicePointManager.ServerCertificateValidationCallback =
+                delegate (
+                    object s,
+                    X509Certificate certificate,
+                    X509Chain chain,
+                    SslPolicyErrors sslPolicyErrors) { return true; };
+
+            // Creating WebClient object to handle return from CarlotaAPI
             WebClient webClient = new WebClient();
-            var retorno = webClient.DownloadString(stringTeste);
+            var retorno = webClient.DownloadString(stringUniversidades);
 
-            dynamic parseJson =  JsonConvert.DeserializeObject(retorno);
-            Console.WriteLine(parseJson);
+            // Deserializing CarlotaAPI JSON return and adding the JSON object to Result.cshtml ViewData["UniversityJson"]
+            dynamic parseJson = JsonConvert.DeserializeObject(retorno);
 
-            ViewData["Message"] = parseJson;
+            ViewData["UniversityJson"] = parseJson;
 
             return View();
         }

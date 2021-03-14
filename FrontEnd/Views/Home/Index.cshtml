@@ -2,7 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form action="/home/result" method="get" id="myForm">
+    <div class="text-center">
+        <h1 class="display-4">Encontrar Universidades</h1>
+        @using (Html.BeginForm("Result", "Home"))
+	    {
+            <input type="text" name="name" /><br />
+            <input type="submit" value="Buscar" />
+	    }
+    </div>
+</form>

@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace CarlotaApi.Controllers
 {
@@ -15,6 +11,7 @@ namespace CarlotaApi.Controllers
         [HttpGet]
         public IActionResult Get(string name="")
         {
+            // Handles the string that call Hipo Labs API, default string represents All universities in Brazil in a JSON.
             string stringTeste;
 
             if (String.IsNullOrEmpty(name))
@@ -26,6 +23,7 @@ namespace CarlotaApi.Controllers
                 stringTeste = $"http://universities.hipolabs.com/search?name={name.Replace(" ", "%20")}&country=brazil";
             }
 
+            // Creatig WebClient object to return JSON object as a string
             WebClient webClient = new WebClient();
             var retorno = webClient.DownloadString(stringTeste);
 
