@@ -13,9 +13,9 @@ Caso nenhum parâmetro seja específicado, a API retornará todas as Universidad
 
 ### Tecnologias
 
-API: C# e .NET Core MVC
-FrontEnd: C#, .NET Core MVC, Razor
-Virtualização: Docker
+- API: C# e .NET Core MVC
+- FrontEnd: C#, .NET Core MVC, Razor
+- Virtualização: Docker
 
 ### Rode o projeto
 
