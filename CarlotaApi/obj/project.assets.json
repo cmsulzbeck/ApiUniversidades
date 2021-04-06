@@ -146,11 +146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj",
+      "projectUniqueName": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj",
       "projectName": "CarlotaApi",
-      "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj",
+      "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj",
       "packagesPath": "C:\\Users\\cmsulzbeck\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\obj\\",
+      "outputPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

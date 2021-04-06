@@ -32,11 +32,11 @@ namespace FrontEnd.Controllers
         public IActionResult Result(string? name)
         {
             // String that call CarlotaAPI and gets the JSON object as string to be processed in Result View
-            var stringUniversidades = "https://localhost:5443/search";
+            var stringUniversidades = "https://localhost:5001/search";
 
             if (name != null)
             {
-                stringUniversidades = $"https://localhost:5443/search?name={name}";
+                stringUniversidades = $"https://localhost:5001/search?name={name}";
             }
 
             // * -----------------------------------------------------------------------------------------------------------------------*

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\FrontEnd\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj": {
+    "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj",
+        "projectUniqueName": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj",
         "projectName": "CarlotaApi",
-        "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj",
+        "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj",
         "packagesPath": "C:\\Users\\cmsulzbeck\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\obj\\",
+        "outputPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -77,14 +77,14 @@
         }
       }
     },
-    "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\FrontEnd\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\FrontEnd\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\FrontEnd\\FrontEnd.csproj",
+        "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\FrontEnd\\FrontEnd.csproj",
         "packagesPath": "C:\\Users\\cmsulzbeck\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\FrontEnd\\obj\\",
+        "outputPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\FrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -107,8 +107,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj": {
-                "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj"
+              "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj": {
+                "projectPath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj"
               }
             }
           }

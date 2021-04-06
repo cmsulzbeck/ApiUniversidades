@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Augk2vYryAkeGL4pNhPinCnxEQrIRBO+PcFE40CuDmRQmxb4z9PxYuMkVKdjy26glTA6UQnYK2lEdfLpNtyHvw==",
+  "dgSpecHash": "csA4yLBdimD2d8DiUmvvjKLglwpCAV6NGCqmPVeq5aLlnEtc1tNBSxNbpjlpM2YayrVPgTEPuX7b2iLkJBQJyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaAPI\\CarlotaAPI\\CarlotaApi\\CarlotaApi.csproj",
+  "projectFilePath": "C:\\Users\\cmsulzbeck\\source\\repos\\CarlotaApi2\\ApiUniversidades\\CarlotaApi\\CarlotaApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cmsulzbeck\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.13\\microsoft.visualstudio.azure.containers.tools.targets.1.10.13.nupkg.sha512",
     "C:\\Users\\cmsulzbeck\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
